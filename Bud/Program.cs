@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bud.Screens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,17 @@ namespace Bud
     {
         static void Main(string[] args)
         {
+            Context.loadContext();
+            mainLoop();
+        }
+
+        static void mainLoop()
+        {
+            while(true)
+            {
+                Context.CURRENT_SCREEN.render();
+                Context.CURRENT_SCREEN.processInput(Console.ReadKey());
+            }
         }
     }
 }
