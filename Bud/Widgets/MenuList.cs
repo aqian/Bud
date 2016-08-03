@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bud.Widgets
 {
+    //Has a number of runtime configurable options which can be cycled through and selected.
+    //The actual selection of an option is handled by the screen, and the selected option found through the getSelectedOption() method
     class MenuList : Widget
     {
         private List<string> items;

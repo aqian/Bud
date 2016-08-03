@@ -19,6 +19,7 @@ namespace Bud
         {
             while(true)
             {
+                //todo, limit this to run at a max of... 10 fps? instead of just spinning
                 Context.CURRENT_SCREEN.render();
                 Context.CURRENT_SCREEN.processInput(Console.ReadKey());
             }
