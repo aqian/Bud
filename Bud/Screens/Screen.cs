@@ -10,6 +10,6 @@ namespace Bud.Screens
     {
         void render();
         void processInput(ConsoleKeyInfo input);
-
+        void cleanup();
     }
 }

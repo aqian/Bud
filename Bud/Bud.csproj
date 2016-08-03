@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
+    <Compile Include="Modules\Module.cs" />
+    <Compile Include="Modules\Navigator\Navigator.cs" />
+    <Compile Include="Modules\Navigator\NavigatorMainScreen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\MainScreen.cs" />
