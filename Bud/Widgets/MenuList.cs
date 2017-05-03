@@ -59,9 +59,11 @@ namespace Bud.Widgets
         {
             switch(input.Key)
             {
+                case ConsoleKey.W:
                 case ConsoleKey.UpArrow:
                     selected = (selected == 0) ? items.Count - 1 : selected-=1;
                     break;
+                case ConsoleKey.S:
                 case ConsoleKey.DownArrow:
                     selected = (selected == items.Count - 1) ? 0 : selected+=1;
                     break;

@@ -35,6 +35,8 @@ namespace Bud.Modules.Navigator
                 case ConsoleKey.B:
                     Context.backScreen();
                     break;
+                case ConsoleKey.W:
+                case ConsoleKey.S:
                 case ConsoleKey.UpArrow:
                 case ConsoleKey.DownArrow:
                     menu.processInput(key);
